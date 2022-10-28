@@ -1,0 +1,11 @@
+error: must be public: try adding `pub` before the declaration
+ --> trybuild/fail/public-with-non-public-fields.rs:4:5
+  |
+4 |     bar: (),
+  |     ^^^^^^^
+
+error: must be public: try adding `pub` before the declaration
+  --> trybuild/fail/public-with-non-public-fields.rs:10:5
+   |
+10 |     bar: (),
+   |     ^^^^^^^
