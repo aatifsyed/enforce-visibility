@@ -1,9 +1,38 @@
+//! Require that a struct and all its fields are public.
+//! ```rust
+//! use enforce_visibility::public;
+//!
+//! #[public]
+//! pub struct Foo {
+//!     pub bar: usize
+//! }
+//! ```
+//!
+//! ```rust,compile_fail
+//! # use enforce_visibility::public;
+//!
+//! #[public]
+//! pub struct Foo {
+//!     bar: usize
+//! }
+//! ```
+//!
+//! ```text
+//! error: field must be public: try adding `pub` before the declaration
+//!   --> foo.rs:5:5
+//!    |
+//!  5 |     bar: usize,
+//!    |     ^^^^^^^
+//! ```
+
 use std::iter;
 
 use proc_macro::TokenStream;
 use proc_macro_error::{emit_error, proc_macro_error};
 use syn::{parse_macro_input, DeriveInput, Field, Visibility};
 
+/// Require that this struct and all its fields are public.
+/// See [module documentation](index.html)
 #[proc_macro_attribute]
 #[proc_macro_error]
 pub fn public(attr: TokenStream, item: TokenStream) -> TokenStream {
