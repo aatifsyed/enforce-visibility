@@ -12,13 +12,13 @@ pub fn public(attr: TokenStream, item: TokenStream) -> TokenStream {
     let item = parse_macro_input!(item as DeriveInput);
 
     if !attr.is_empty() {
-        emit_error!(attr, "attributes to this macro are not supported");
+        emit_error!(attr, "arguments to this macro are not supported");
     }
 
     if !is_public(&item.vis) {
         emit_error!(
             item,
-            "must be public: try adding `pub` before the declaration"
+            "definition must be public: try adding `pub` before the declaration"
         );
     }
 
@@ -32,7 +32,7 @@ pub fn public(attr: TokenStream, item: TokenStream) -> TokenStream {
         if !is_public(&field.vis) {
             emit_error!(
                 field,
-                "must be public: try adding `pub` before the declaration"
+                "field must be public: try adding `pub` before the declaration"
             )
         }
     }

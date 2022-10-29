@@ -1,23 +1,29 @@
-error: must be public: try adding `pub` before the declaration
+error: definition must be public: try adding `pub` before the declaration
  --> trybuild/fail/non-public-empty.rs:2:1
   |
 2 | enum Enum {}
   | ^^^^^^^^^^^^
 
-error: must be public: try adding `pub` before the declaration
+error: definition must be public: try adding `pub` before the declaration
  --> trybuild/fail/non-public-empty.rs:5:1
   |
 5 | struct Struct {}
   | ^^^^^^^^^^^^^^^^
 
-error: must be public: try adding `pub` before the declaration
+error: definition must be public: try adding `pub` before the declaration
  --> trybuild/fail/non-public-empty.rs:8:1
   |
 8 | struct Unit;
   | ^^^^^^^^^^^^
 
-error: must be public: try adding `pub` before the declaration
+error: definition must be public: try adding `pub` before the declaration
   --> trybuild/fail/non-public-empty.rs:11:1
    |
 11 | union Union {}
    | ^^^^^^^^^^^^^^
+
+error: definition must be public: try adding `pub` before the declaration
+  --> trybuild/fail/non-public-empty.rs:14:1
+   |
+14 | struct Tuple();
+   | ^^^^^^^^^^^^^^^

@@ -10,4 +10,7 @@ struct Unit;
 #[enforce_visibility::public]
 union Union {}
 
+#[enforce_visibility::public]
+struct Tuple();
+
 fn main() {}

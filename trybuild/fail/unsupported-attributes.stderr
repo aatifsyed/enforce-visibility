@@ -1,10 +1,10 @@
-error: attributes to this macro are not supported
+error: arguments to this macro are not supported
  --> trybuild/fail/unsupported-attributes.rs:1:30
   |
 1 | #[enforce_visibility::public(foo)]
   |                              ^^^
 
-error: must be public: try adding `pub` before the declaration
+error: definition must be public: try adding `pub` before the declaration
  --> trybuild/fail/unsupported-attributes.rs:2:1
   |
 2 | struct Foo {}

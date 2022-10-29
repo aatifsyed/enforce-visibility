@@ -19,4 +19,7 @@ pub struct Union {
     pub bar: (),
 }
 
+#[enforce_visibility::public]
+pub struct Tuple(pub (), pub ());
+
 fn main() {}
