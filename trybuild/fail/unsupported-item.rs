@@ -1,4 +1,4 @@
-#[enforce_visibility::public]
+#[xlint::public]
 fn foo() {}
 
 fn main() {}

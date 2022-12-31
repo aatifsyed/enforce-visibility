@@ -1,13 +1,13 @@
-#[enforce_visibility::public]
+#[xlint::public]
 pub enum Enum {}
 
-#[enforce_visibility::public]
+#[xlint::public]
 pub struct Struct {}
 
-#[enforce_visibility::public]
+#[xlint::public]
 pub struct Unit;
 
-#[enforce_visibility::public]
+#[xlint::public]
 pub struct Tuple();
 
 fn main() {}

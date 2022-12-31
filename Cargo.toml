@@ -1,6 +1,6 @@
 [package]
-name = "enforce-visibility"
-description = "Require that a struct and all its fields are public"
+name = "xlint"
+description = "Lightweight lints based on proc-macros."
 version = "0.1.0"
 edition = "2021"
 license = "Apache 2.0 OR MIT"

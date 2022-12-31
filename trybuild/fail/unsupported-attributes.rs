@@ -1,4 +1,4 @@
-#[enforce_visibility::public(foo)]
+#[xlint::public(foo)]
 struct Foo {}
 
 fn main() {}

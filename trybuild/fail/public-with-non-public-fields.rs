@@ -1,16 +1,16 @@
-#[enforce_visibility::public]
+#[xlint::public]
 pub struct Struct {
     pub foo: (),
     bar: (),
 }
 
-#[enforce_visibility::public]
+#[xlint::public]
 pub union Union {
     pub foo: (),
     bar: (),
 }
 
-#[enforce_visibility::public]
+#[xlint::public]
 pub struct Tuple(pub (), ());
 
 fn main() {}

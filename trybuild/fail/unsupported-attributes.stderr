@@ -1,8 +1,8 @@
 error: arguments to this macro are not supported
- --> trybuild/fail/unsupported-attributes.rs:1:30
+ --> trybuild/fail/unsupported-attributes.rs:1:17
   |
-1 | #[enforce_visibility::public(foo)]
-  |                              ^^^
+1 | #[xlint::public(foo)]
+  |                 ^^^
 
 error: definition must be public: try adding `pub` before the declaration
  --> trybuild/fail/unsupported-attributes.rs:2:1

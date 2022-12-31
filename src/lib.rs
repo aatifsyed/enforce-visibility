@@ -1,17 +1,15 @@
-//! Require that a struct and all its fields are public.
-//! ```rust
-//! use enforce_visibility::public;
+//! Lightweight lints based on proc-macros.
 //!
-//! #[public]
+//! ## Require that a struct and all its fields are public with [`public`]
+//! ```rust
+//! #[xlint::public]
 //! pub struct Foo {
 //!     pub bar: usize
 //! }
 //! ```
 //!
 //! ```rust,compile_fail
-//! # use enforce_visibility::public;
-//!
-//! #[public]
+//! #[xlint::public]
 //! pub struct Foo {
 //!     bar: usize
 //! }
